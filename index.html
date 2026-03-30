@@ -991,7 +991,13 @@ function switchDay(newIndex) {
       card.style.transform = 'scale(1) rotateY(0deg)';
       card.style.opacity = '1';
 
-      setTimeout(() => { isAnimating = false; }, 400);
+      setTimeout(() => {
+        // Clear inline styles so CSS classes (.flipped) can take effect
+        card.style.transition = '';
+        card.style.transform = '';
+        card.style.opacity = '';
+        isAnimating = false;
+      }, 400);
     });
   }, 350);
 
