@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(GH_HOST=github.com gh api repos/animeshKmishra/meal-planner/pages/builds -X POST)",
+      "Bash(GH_HOST=github.com gh api repos/animeshKmishra/meal-planner/pages/builds/latest)"
+    ]
+  }
+}
